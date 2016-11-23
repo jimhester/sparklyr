@@ -1,5 +1,9 @@
 # Sparklyr 0.5.0 (UNRELEASED)
 
+- Renamed sdf_load and sdf_save to spark_read and spark_write for consistency.
+
+- Support to use tbl_cache and tbl_uncache when dplyr is not imported.
+
 - Support to configure Livy using the `livy.` prefix in the `config.yml` file.
 
 - Implemented experimental support for Livy through: `livy_install`, 
