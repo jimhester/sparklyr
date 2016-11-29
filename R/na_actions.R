@@ -62,10 +62,7 @@ na.omit.spark_jobj <- function(object, columns = NULL, ...) {
   if (identical(n_before, n_after)) {
     object
   } else {
-    result <- sdf_register(dropped)
-    invoke(spark_dataframe(result), "cache")
-
-    result
+    sdf_register(dropped)
   }
 }
 
